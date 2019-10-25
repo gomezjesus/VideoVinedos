@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/components/Item.scss";
 import playIcon from "../assets/static/play-icon.png";
 import plusIcon from "../assets/static/plus-icon.png";
-const Item = () => (
+const Item = ({ title }) => (
   <div className='carousel-item'>
     <img
       className='carousel-item__img'
@@ -22,7 +22,7 @@ const Item = () => (
           alt='Plus Icon'
         />
       </div>
-      <p className='carousel-item__details--title'>Título descriptivo</p>
+      <p className='carousel-item__details--title'>{title}</p>
       <p className='carousel-item__details--subtitle'>2019 16+ 114 minutos</p>
     </div>
   </div>

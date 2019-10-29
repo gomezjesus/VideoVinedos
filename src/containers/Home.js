@@ -5,22 +5,21 @@ import "../assets/styles/App.scss";
 import Categories from "../components/Categories";
 import Carrousel from "../components/Carrousel";
 import Item from "../components/Item";
-import useInitialState from "../hooks/useInitialState";
 
 const Home = ({ mylist, trends, originals }) => {
   return (
     <>
       <Search />
       {mylist.length && (
-        <Categories title='Mi Lista'>
+        <Categories title="Mi Lista">
           <Carrousel>
             {mylist.map(x => (
-              <Item key={x.id} {...x} />
+              <Item key={x.id} {...x} isList />
             ))}
           </Carrousel>
         </Categories>
       )}
-      <Categories title='Tendencias'>
+      <Categories title="Tendencias">
         <Carrousel>
           {trends.map(x => (
             <Item key={x.id} {...x} />
@@ -28,7 +27,7 @@ const Home = ({ mylist, trends, originals }) => {
         </Carrousel>
       </Categories>
 
-      <Categories title='Originales de Viñedos'>
+      <Categories title="Originales de Viñedos">
         <Carrousel>
           {originals.map(x => (
             <Item key={x.id} {...x} />

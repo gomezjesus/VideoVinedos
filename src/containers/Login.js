@@ -48,7 +48,7 @@ const Login = props => {
           <div className="login__container--remember-me">
             <label>
               <input type="checkbox" id="cbox1" value="first_checkbox" />
-              Recuérdame
+              Recuérdamey
             </label>
             <a href="/">Olvidé mi contraseña</a>
           </div>
@@ -61,7 +61,7 @@ const Login = props => {
             <img src={twiterIcon} /> Inicia sesión con Twitter
           </div>
         </section>
-        <p className="login__container--register">No tienes ninguna cuenta</p>
+        <p className="login__container--register">No tienes ninguna cuenta </p>
         <Link to="/register">Regístrate</Link>
       </section>
     </section>

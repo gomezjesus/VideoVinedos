@@ -9,7 +9,7 @@ import Item from "../components/Item";
 const Home = ({ mylist, trends, originals }) => {
   return (
     <>
-      <Search />
+      <Search isHome />
       {mylist.length && (
         <Categories title="Mi Lista">
           <Carrousel>
